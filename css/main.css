@@ -27,11 +27,9 @@ body {
 .img-projects {
   width: 400px;
 }
-.img-1 {
-  width: 40rem;
-}
+
 @media only screen and (max-width: 800px) {
-  .img-1 {
-    width: 20rem !important;
+  .project-cards {
+    padding: 0 50px;
   }
 }
