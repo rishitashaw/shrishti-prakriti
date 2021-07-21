@@ -3,7 +3,7 @@ body {
 }
 .container-1 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   background: #64a19d;
   padding: 15px;
@@ -20,7 +20,13 @@ body {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
+.project-cards {
+  padding: 0 130px;
+}
 
+.img-projects {
+  width: 400px;
+}
 .img-1 {
   width: 40rem;
 }
