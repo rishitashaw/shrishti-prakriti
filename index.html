@@ -145,70 +145,196 @@
           </div>
         </nav>
         <!-- filter Images -->
+        
+
+        <!-- Images used to open the lightbox -->
         <div class="gallery">
           <div class="image" data-name="August">
-            <span><img src="imgs/3.jpg" alt="" /></span>
-          </div>
-          <div class="image" data-name="July">
-            <span><img src="imgs/4.jpg" alt="" /></span>
-          </div>
-          <div class="image" data-name="June">
-            <span><img src="imgs/5.jpg" alt="" /></span>
-          </div>
-          <div class="image" data-name="May">
-            <span><img src="imgs/6.jpg" alt="" /></span>
+            <span><img
+              src="imgs/3.jpg"
+              
+              onclick="openModal();currentSlide(1)"
+              class="hover-shadow"
+            /></span>
           </div>
           <div class="image" data-name="August">
-            <span><img src="imgs/7.jpg" alt="" /></span>
-          </div>
-          <div class="image" data-name="July">
-            <span><img src="imgs/8.jpg" alt="" /></span>
-          </div>
-          <div class="image" data-name="June">
-            <span><img src="imgs/9.jpg" alt="" /></span>
-          </div>
-          <div class="image" data-name="May">
-            <span><img src="imgs/15.jpg" alt="" /></span>
+            <span><img
+              src="imgs/4.jpg"
+              
+              onclick="openModal();currentSlide(2)"
+              class="hover-shadow"
+            /></span>
           </div>
           <div class="image" data-name="August">
-            <span><img src="imgs/16.jpg" alt="" /></span>
-          </div>
-          <div class="image" data-name="July">
-            <span><img src="imgs/3.jpg" alt="" /></span>
+            <span><img
+              src="imgs/5.jpg"
+              
+              onclick="openModal();currentSlide(3)"
+              class="hover-shadow"
+            /></span>
           </div>
           <div class="image" data-name="June">
-            <span><img src="imgs/4.jpg" alt="" /></span>
+            <span><img
+              src="imgs/6.jpg"
+              
+              onclick="openModal();currentSlide(4)"
+              class="hover-shadow"
+            /></span>
+          </div>
+          <div class="image" data-name="June">
+            <span><img
+              src="imgs/7.jpg"
+              
+              onclick="openModal();currentSlide(4)"
+              class="hover-shadow"
+            /></span>
+          </div>
+          <div class="image" data-name="June">
+            <span><img
+              src="imgs/8.jpg"
+              
+              onclick="openModal();currentSlide(4)"
+              class="hover-shadow"
+            /></span>
+          </div>
+          <div class="image" data-name="July">
+            <span><img
+              src="imgs/9.jpg"
+              
+              onclick="openModal();currentSlide(4)"
+              class="hover-shadow"
+            /></span>
+          </div>
+          <div class="image" data-name="July">
+            <span><img
+              src="imgs/10.jpg"
+              
+              onclick="openModal();currentSlide(4)"
+              class="hover-shadow"
+            /></span>
           </div>
           <div class="image" data-name="May">
-            <span><img src="imgs/5.jpg" alt="" /></span>
+            <span><img
+              src="imgs/11.jpg"
+              
+              onclick="openModal();currentSlide(4)"
+              class="hover-shadow"
+            /></span>
+          </div>
+          <div class="image" data-name="May">
+            <span><img
+              src="imgs/12.jpg"
+              
+              onclick="openModal();currentSlide(4)"
+              class="hover-shadow"
+            /></span>
+          </div>
+          <div class="image" data-name="May">
+            <span><img
+              src="imgs/13.jpg"
+              
+              onclick="openModal();currentSlide(4)"
+              class="hover-shadow"
+            /></span>
+          </div>
+          <div class="image" data-name="May">
+            <span><img
+              src="imgs/14.jpg"
+              
+              onclick="openModal();currentSlide(4)"
+              class="hover-shadow"
+            /></span>
           </div>
           <div class="image" data-name="Older">
-            <span><img src="imgs/11.jpg" alt="" /></span>
+            <span><img
+              src="imgs/15.jpg"
+              
+              onclick="openModal();currentSlide(4)"
+              class="hover-shadow"
+            /></span>
           </div>
           <div class="image" data-name="Older">
-            <span><img src="imgs/12.jpg" alt="" /></span>
-          </div>
-          <div class="image" data-name="Older">
-            <span><img src="imgs/13.jpg" alt="" /></span>
-          </div>
-          <div class="image" data-name="Older">
-            <span><img src="imgs/14.jpg" alt="" /></span>
+            <span><img
+              src="imgs/16.jpg"
+              
+              onclick="openModal();currentSlide(4)"
+              class="hover-shadow"
+            /></span>
           </div>
         </div>
-      </div>
-      <!-- fullscreen img preview box -->
-      <div class="preview-box">
-        <div class="details">
-          <span class="title"
-            >Image Category:
-            <p></p
-          ></span>
 
-          <span onclick="closeOnClick()" class="icon fas fa-times"></span>
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides">
+              <div class="numbertext">1 / 14</div>
+              <img src="imgs/3.jpg" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 14</div>
+              <img src="imgs/4.jpg" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 14</div>
+              <img src="imgs/5.jpg" />
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 14</div>
+              <img src="imgs/6.jpg" />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">5 / 14</div>
+              <img src="imgs/7.jpg" />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">6 / 14</div>
+              <img src="imgs/8.jpg" />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">7 / 14</div>
+              <img src="imgs/9.jpg" />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">8 / 14</div>
+              <img src="imgs/10.jpg" />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">9 / 14</div>
+              <img src="imgs/11.jpg" />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">10 / 14</div>
+              <img src="imgs/12.jpg" />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">11 / 14</div>
+              <img src="imgs/13.jpg" />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">12 / 14</div>
+              <img src="imgs/14.jpg" />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">13 / 14</div>
+              <img src="imgs/15.jpg" />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">14 / 14</div>
+              <img src="imgs/16.jpg" />
+            </div>
+            <!-- Next/previous controls -->
+            
+           
+          
         </div>
-        <div class="image-box"><img src="" alt="" /></div>
       </div>
-      <div class="shadow"></div>
+
+      <!-- fullscreen img preview box -->
+      
     </div>
 
     <!-- Signup-->
